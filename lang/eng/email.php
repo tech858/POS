@@ -1,0 +1,70 @@
+<?php
+
+return array (
+  'reservation' => array (
+    'subject' => 'New Reservation Received: ',
+    'text1' => 'A new reservation has been made.',
+    'text2' => 'Reservation Details:',
+    'text3' => 'Please prepare accordingly.',
+    'text4' => 'Your reservation has been confirmed.',
+    'action' => 'View Reservation',
+  ),
+  'newOrder' => array (
+    'subject' => 'New Order Received',
+    'text1' => 'A new order has been placed. ',
+    'text2' => 'Order Details:',
+    'text3' => 'Order Items: ',
+    'action' => 'View Order',
+    'text4' => 'Please prepare the order accordingly.',
+  ),
+  'sendOrderBill' => array (
+    'subject' => 'Your Order Receipt',
+    'text1' => 'Thank you for your order! Here are the details:',
+    'text2' => 'Order Details:',
+    'text3' => 'Order Items: ',
+    'action' => 'View Order',
+    'text4' => 'Please prepare the order accordingly.',
+  ),
+  'staffWelcome' => array (
+    'subject' => 'Welcome to ',
+    'text1' => 'Your account is ready to go.',
+    'text2' => 'Login Email: ',
+    'text3' => 'Password: ',
+    'action' => 'Click Here To Login',
+  ),
+  'emailVerification' => array (
+    'subject' => 'Email Verification Code',
+    'text1' => 'Your email verification code is: ',
+  ),
+  'trialLicenseExpPre' => array (
+    'subject' => 'License Expiration Notice',
+    'greeting' => 'Hello :name!',
+    'line1' => 'Your trial license is about to expire on **:date**.',
+    'line2' => 'Please take the necessary actions to renew it.',
+    'action' => 'Go to Dashboard',
+    'line3' => 'Thank you for using our application!',
+  ),
+  'trialLicenseExp' => array (
+    'subject' => 'Your Trial License Has Expired',
+    'greeting' => 'Hello :name!',
+    'line1' => 'We wanted to let you know that your trial license has expired.',
+    'line2' => 'Restaurant Name: :restaurant_name',
+    'action' => 'Go to Dashboard',
+  ),
+  'subscriptionExpire' => array (
+    'subject' => 'Subscription Expiration Notice',
+    'greeting' => 'Hello :name!',
+    'line1' => 'We are writing to inform you that your subscription for :restaurant_name has expired.',
+    'line2' => 'The subscription expired on :date.',
+    'action' => 'Renew Subscription',
+    'line3' => 'Thank you for using our application!',
+  ),
+  'restaurantUpdatedPlan' => array (
+    'subject' => 'Restaurant Plan Updated Successfully',
+    'greeting' => 'Hello :name!',
+    'line1' => 'A restaurant plan has been successfully updated.',
+    'line2' => 'Here are the updated plan details:',
+    'action' => 'View Dashboard',
+    'line4' => 'Thank you for using our service!',
+  ),
+);
