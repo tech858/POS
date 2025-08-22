@@ -1,18 +1,7 @@
 <?php
 
+use Illuminate\Foundation\Application;
 use Illuminate\Http\Request;
-
-if(!file_exists('../.env')){
-    $GLOBALS["error_type"] = "env-missing";
-    include('error_install.php');
-    exit(1);
-}
-
-if (version_compare(PHP_VERSION, '8.2.0') < 0){
-    $GLOBALS["error_type"] = "php-version";
-    include('error_install.php');
-    exit(1);
-}
 
 define('LARAVEL_START', microtime(true));
 
@@ -25,5 +14,7 @@ if (file_exists($maintenance = __DIR__.'/../storage/framework/maintenance.php'))
 require __DIR__.'/../vendor/autoload.php';
 
 // Bootstrap Laravel and handle the request...
-(require_once __DIR__.'/../bootstrap/app.php')
-    ->handleRequest(Request::capture());
+/** @var Application $app */
+$app = require_once __DIR__.'/../bootstrap/app.php';
+
+$app->handleRequest(Request::capture());
